@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dev-lens-agent
+  main:
+    web-application-type: none
+  ai:
+    anthropic:
+      api-key: ${ANTHROPIC_API_KEY}
+      chat:
+        options:
+          model: claude-sonnet-4-20250514

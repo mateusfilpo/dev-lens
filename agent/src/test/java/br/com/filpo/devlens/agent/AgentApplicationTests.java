@@ -1,13 +1,11 @@
-package br.com.filpo.devlens;
+package br.com.filpo.devlens.agent;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DevLensApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
+class AgentApplicationTests {
+    @Test
+    void contextLoads() {
+    }
 }

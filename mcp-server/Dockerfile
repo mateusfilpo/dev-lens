@@ -1,0 +1,10 @@
+FROM eclipse-temurin:25-jdk AS build
+WORKDIR /app
+COPY ../ ./
+RUN ./mvnw -pl mcp-server -am package -DskipTests
+
+FROM eclipse-temurin:25-jre
+WORKDIR /app
+COPY --from=build /app/mcp-server/target/*.jar app.jar
+EXPOSE 8081
+ENTRYPOINT ["java", "-jar", "app.jar"]

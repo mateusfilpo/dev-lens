@@ -1,3 +1,6 @@
+# Environment variables
+.env
+
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -36,3 +39,4 @@ build/
 dev-lens.md
 analysis_and_next_steps.md
 implementation_plan_fase_*.md
+walkthrough_fase_*.md
