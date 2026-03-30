@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: dev-lens-mcp-server
+  ai:
+    mcp:
+      server:
+        enabled: true
+        name: dev-lens-mcp-server
+        version: 0.0.1
