@@ -9,3 +9,13 @@ spring:
       chat:
         options:
           model: claude-sonnet-4-20250514
+    mcp:
+      client:
+        enabled: true
+        name: dev-lens-agent
+        version: 0.0.1
+        type: SYNC
+        sse:
+          connections:
+            dev-lens-server:
+              url: ${MCP_SERVER_URL:http://localhost:8081}

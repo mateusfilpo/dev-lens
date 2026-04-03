@@ -16,6 +16,7 @@ services:
       - mcp-server
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MCP_SERVER_URL=http://mcp-server:8081
       - SPRING_PROFILES_ACTIVE=docker
     stdin_open: true
     tty: true

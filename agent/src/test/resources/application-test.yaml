@@ -1,0 +1,9 @@
+spring:
+  ai:
+    mcp:
+      client:
+        enabled: false
+
+dev-lens:
+  repl:
+    enabled: false
